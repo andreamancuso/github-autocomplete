@@ -1,14 +1,17 @@
 {
-  "name": "animal-species-browser",
+  "name": "github-autocomplete",
   "version": "0.1.0",
   "private": true,
   "engines": {
     "node": "10.13.0"
   },
   "dependencies": {
+    "lodash.debounce": "4.0.8",
+    "qs": "6.6.0",
     "react": "16.6.3",
     "react-dom": "16.6.3",
-    "styled-components": "4.1.1"
+    "styled-components": "4.1.1",
+    "styled-icons": "5.1.0"
   },
   "scripts": {
     "build:development": "webpack --mode development --config webpack.config.js",
@@ -16,8 +19,11 @@
     "start": "webpack-dev-server --hot --mode development --config webpack.config.js --open"
   },
   "devDependencies": {
+    "@types/lodash.debounce": "4.0.4",
+    "@types/qs": "6.5.1",
     "@types/react": "16.7.7",
     "@types/react-dom": "16.0.10",
+    "@types/styled-components": "4.1.1",
     "babel-polyfill": "^6.26.0",
     "clean-webpack-plugin": "1.0.0",
     "css-loader": "^0.28.7",
