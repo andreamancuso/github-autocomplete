@@ -43,12 +43,9 @@ module.exports = (env) => {
             ]
         },
         plugins: [
-            // tailwindcss(path.join(__dirname, 'tailwind.js')),
-            require('autoprefixer'),
             new webpack.DefinePlugin({
                 'process.env.NODE_ENV': JSON.stringify('development'),
-                NODE_ENV: JSON.stringify('development'),
-                API_URL: JSON.stringify('http://localhost:3000')
+                NODE_ENV: JSON.stringify('development')
             }),
             new CleanWebpackPlugin(['dist']),
             new HtmlWebpackPlugin({

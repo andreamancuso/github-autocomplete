@@ -1,15 +1,9 @@
-// declare var API_URL: string;
-// declare var MOCKS_URL: string;
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 import App from "./App";
 
-declare var NODE_ENV: string;
 declare let module: any;
-
-if (NODE_ENV === 'development') {
-}
 
 ReactDOM.render(
     <App />,
